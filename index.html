@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entertainment</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background-image: url('bg02.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed;
+  color: white; 
+}
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      background-color: #5791f7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0a6ddf;
+    }
+    #content {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+    #face {
+      margin-top: 20px;
+    }
+    #face img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Entertainment page</h1>
+  <button onclick="getJoke()">Get Joke</button>
+  <button onclick="getFact()">Get Fact</button>
+  <button onclick="getNewFace()">Get New Face</button>
+
+  <div id="content"></div>
+  <div id="face"></div>
+
+  <script src="intertainment.js"></script>
+</body>
+</html>
